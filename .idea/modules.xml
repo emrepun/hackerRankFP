@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HackerFunctional.iml" filepath="$PROJECT_DIR$/.idea/modules/HackerFunctional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hackerfunctional-build.iml" filepath="$PROJECT_DIR$/.idea/modules/hackerfunctional-build.iml" />
+    </modules>
+  </component>
+</project>
