@@ -1,6 +1,20 @@
+import scala.math
+
 object Main {
   def main(args: Array[String]): Unit = {
 
+  }
+
+  //https://www.hackerrank.com/challenges/fp-update-list/problem
+  def f(arr:List[Int]):List[Int] = {
+    //arr.map(x => Math.abs(x)) - built-in map solution but, lets implement more fun way:
+    def newArrayThing(oldOne:List[Int], newOne:List[Int]): List[Int] = oldOne match {
+      case x::xs =>
+        if (x < 0) newArrayThing(xs, newOne:+(-x))
+        else newArrayThing(xs, newOne:+x)
+      case Nil => newOne
+    }
+    newArrayThing(arr, List())
   }
 
   //https://www.hackerrank.com/challenges/fp-list-length/problem
