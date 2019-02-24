@@ -1,4 +1,4 @@
-# hackerRankFP
+# Hackerrank Functional Programming
 My own implementations of hackerrank functional programming problems, with Scala.
 
 Associated problem link can be found at top of each function.
