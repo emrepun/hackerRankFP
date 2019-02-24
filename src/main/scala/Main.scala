@@ -3,6 +3,15 @@ object Main {
 
   }
 
+  //https://www.hackerrank.com/challenges/fp-list-length/problem
+  def f(arr:List[Int]):Int =  {
+    def accumulator(acc: Int, remainingList: List[Int]): Int = remainingList match {
+      case Nil => acc
+      case x::xs => accumulator(acc+1, xs)
+    }
+    accumulator(0, arr)
+  }
+
   //https://www.hackerrank.com/challenges/fp-sum-of-odd-elements
   def f(arr:List[Int]):Int = {
     def accumulator(acc: Int, remainingList: List[Int]): Int = remainingList match  {
