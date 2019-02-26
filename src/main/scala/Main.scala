@@ -5,6 +5,12 @@ object Main {
 
   }
 
+  //https://www.hackerrank.com/challenges/eval-ex/problem
+  def evalX(n: Double): Double = {
+    def factorial(n:Int):Int = if (n==0) 1 else n * factorial(n-1)
+    (1 until 10).toList.foldLeft(1.0) { (acc, i) => acc + (math.pow(n,i)/factorial(i)) }
+  }
+
   //https://www.hackerrank.com/challenges/fp-update-list/problem
   def f(arr:List[Int]):List[Int] = {
     //arr.map(x => Math.abs(x)) - built-in map solution but, lets implement more fun way:
